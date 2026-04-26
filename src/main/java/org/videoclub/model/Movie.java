@@ -14,6 +14,17 @@ public class Movie {
 
     private Double rating;
 
+    public Movie(int id, int year, int duration, String title, String director, String sinopsis, String language, String genre, Double rating) {
+        this.id = id;
+        this.year = year;
+        this.duration = duration;
+        this.title = title;
+        this.director = director;
+        this.sinopsis = sinopsis;
+        this.language = language;
+        this.genre = genre;
+        this.rating = rating;
+    }
 
     public int getId() {
         return id;

@@ -24,7 +24,7 @@ public class MovieView {
 
         System.out.println("Duración: ");
         int duration = scanner.nextInt();
-
+        scanner.nextLine();
 
         System.out.println("Título: ");
         String title = scanner.nextLine();

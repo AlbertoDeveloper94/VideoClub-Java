@@ -48,7 +48,6 @@ public List<Movie> findAll() {
 
             while (rs.next()) {
                 Movie movie = new Movie(
-                        rs.getInt("id"),
                         rs.getInt("year"),
                         rs.getInt("duration"),
                         rs.getString("title"),
@@ -56,7 +55,7 @@ public List<Movie> findAll() {
                         rs.getString("sinopsis"),
                         rs.getString("language"),
                         rs.getString("genre"),
-                        rs.getDouble("rating"));
+                rs.getDouble("rating"));
 
                 movies.add(movie);
             }
